@@ -171,7 +171,6 @@ function fnSessionReady(event) {
   //
   txtCallee.hidden = false;
   btnCall.hidden = false;
-  btnHangup.hidden = false;
 }
 
 /**
@@ -210,3 +209,4 @@ function fnSessionDisconnected() {
   btnHangup.hidden = true;
   btnAnswer.hidden = true;
 }
+
