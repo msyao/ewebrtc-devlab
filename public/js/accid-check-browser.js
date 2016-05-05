@@ -43,7 +43,7 @@ window.onload = function() {
 
     btnLogin.hidden = true;
 
-    error('Browser support for Enhanced WebRTC NOT detected. Please use supporting browser like ');
+    error('Browser support for Enhanced WebRTC NOT detected. Please use the supported browser ');
 
     var a = document.createElement('a');
     a.href = 'https://www.google.com/chrome';
