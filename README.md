@@ -33,19 +33,25 @@ This version is self-contained with all files needed to start your Node Express 
   * This will start the Node/Express Web Server.
 4. You should see logs like the following:
 ```
-  ...
-  ...
-  ...
-  api_env: 'sandbox',
-  host: '127.0.0.1',
-  port: 9001,
-  cors_domains: [ '127.0.0.1:9001' ],
-  app_config_url: 'https://127.0.0.1:9001/config',
-  app_tokens_url: 'https://127.0.0.1:9001/tokens',
-  app_e911ids_url: 'https://127.0.0.1:9001/e911ids' }
+...
+...
+...
+-----------------------------------------------------------
+...Attempting to use configuration...
+-----------------------------------------------------------
+       App Key:  ...your...app...key...
+    App Secret:  ...your...app...secret...
+eWebRTC Domain:  ...your...account_id...domain...
+-----------------------------------------------------------
+[INFO] dhs.config: initialize: Complete  [(...your...working...dir.../node_modules/att-dhs/js/att.dhs.config.js:367]
+[INFO] dhs.config: use  [(...your...working...dir.../node_modules/att-dhs/js/att.dhs.config.js:345]
+[INFO] dhs.config: useServer  [(...your...working...dir.../node_modules/att-dhs/js/att.dhs.config.js:278]
+[INFO] dhs.config: useServer: Complete  [(...your...working...dir.../node_modules/att-dhs/js/att.dhs.config.js:290]
+[INFO] dhs.config: use: Complete  [(...your...working...dir.../node_modules/att-dhs/js/att.dhs.config.js:357]
 HTTPS server listening on host:  127.0.0.1  at port  9001
 ```
-> NOTE: App Key, App Secret etc. configuration now goes inside app.js. This is different from previous versions which used package.json for configuration.
+
+> NOTE: App Key, App Secret etc. configuration now go inside app.js. This is different from previous att-dhs versions which used package.json for configuration.
 
 #####Sample App:
 ----
