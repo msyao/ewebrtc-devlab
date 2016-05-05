@@ -82,12 +82,12 @@ var adhs_config = {};
 // run this node express app.
 //
 
-// Required for any AT&T API
+// Required to use any AT&T API
 //
 adhs_config.app_key = '<your_app_key>';
 adhs_config.app_secret = '<your_app_secret>';
 
-// Required for AT&T eWebRTC API
+// Required to use Account Id feature of AT&T eWebRTC API
 //
 adhs_config.ewebrtc_domain = '<your_ewebrtc_domain>';
 
@@ -104,9 +104,9 @@ adhs_config.api_env = 'sandbox';
 // your app key, app secret etc.
 //
 if( '<your_app_key>' === adhs_config.app_key ||
-	 	'<your_app_secret>' === adhs_config.app_secret || 
-		'<your_ewebrtc_domain>' === adhs_config.ewebrtc_domain 
-		) { 
+	'<your_app_secret>' === adhs_config.app_secret || 
+	'<your_ewebrtc_domain>' === adhs_config.ewebrtc_domain 
+	) { 
 	console.error('Did you forget configuring app_key, app_secret, ewebrtc_domain?');
 	console.error('Exiting...');
 	process.exit(1);
